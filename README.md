@@ -1,4 +1,4 @@
-🍽️ YOUR PROJECT: Food Ordering Web Application
+🍽️ Food Ordering Web Application
 
 👉 It is a Django-based full-stack web app where:
 
@@ -10,9 +10,10 @@ Place orders 📦
 
 Admin can manage food items
 
-🧠 1. OVERALL FLOW (VERY IMPORTANT)
+---
+🧠 1. OVERALL FLOW 
 
-👉 This is how your app works:
+👉 This is how my app works:
 
 User opens homepage
 
@@ -28,6 +29,8 @@ Clicks Place Order 📦
 
 Order is saved → Cart is cleared
 
+---
+
 🏗️ 2. PROJECT STRUCTURE
 mysite/
 │
@@ -36,6 +39,9 @@ mysite/
 │
 ├── templates/     → HTML files
 ├── db.sqlite3     → Database
+
+---
+
 📦 3. MODELS (DATABASE DESIGN)
 
 👉 Located in models.py
@@ -74,6 +80,8 @@ quantity
 User: Rajshree
 Item: Burger
 Quantity: 2
+
+---
 📦 3. Order Model
 class Order(models.Model):
 
@@ -90,6 +98,9 @@ date
 📌 Example:
 
 Order → Pizza + Coke → ₹300
+
+---
+
 ⚙️ 4. VIEWS (LOGIC OF APP)
 
 👉 Located in views.py
@@ -102,6 +113,8 @@ class MenuList(generic.ListView)
 All food items
 
 Grouped by meal type
+
+---
 
 🔍 MenuItemDetail
 
@@ -132,6 +145,8 @@ Total price
 
 👉 Removes item from cart
 
+---
+
 📦 place_order()
 
 👉 Logic:
@@ -144,6 +159,8 @@ Create order
 
 Clear cart
 
+---
+
 🌐 5. URLS (ROUTING)
 
 👉 menu/urls.py
@@ -154,6 +171,9 @@ URL	Purpose
 /add-to-cart/1/	Add item
 /cart/	View cart
 /place-order/	Place order
+
+---
+
 🎨 6. TEMPLATES (FRONTEND)
 🏠 index.html
 
@@ -191,6 +211,8 @@ Cart button
 
 Login/logout
 
+---
+
 🔐 7. AUTHENTICATION
 
 👉 Using Django built-in auth
@@ -200,6 +222,8 @@ Login
 Logout
 
 @login_required → protects cart & order
+
+---
 
 💾 8. DATABASE (SQLite)
 
@@ -213,6 +237,7 @@ Cart
 
 Orders
 
+---
 
 ## 📸 Screenshots
 
@@ -232,7 +257,7 @@ Orders
 ### 📦 Order Placement
 ![Order](screenshots/order.png)
 
-
+---
 
 💯 9. KEY CONCEPTS YOU USED
 
@@ -245,7 +270,7 @@ Orders
 ✔ URL routing
 ✔ CRUD operations
 
-
+---
 
 ## 👩‍💻 Author
 
@@ -254,12 +279,16 @@ B.Tech AI & Data Science
 
 ---
 
-## ⭐ Show Your Support
-
-If you like this project, please give it a ⭐ on GitHub!
-
 ## 📬 Contact
 
 Feel free to connect with me for collaboration or opportunities.
 
 Gmail: gholaserajshree@gmail.com
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, please give it a ⭐ on GitHub!
+
+
