@@ -1,8 +1,38 @@
-    {% extends 'base.html' %}
+{% extends 'base.html' %}
 {% block content %}
-    <div class="container">
-        <h1 class="pt-5">{{ item.meal }}</h1>
-        <p>{{ item.description }}</p>
-        <p>{{ item.price }}</p>
+
+<div class="container">
+
+    <h1 class="pt-5">{{ item.meal }}</h1>
+
+    <!-- Price -->
+    <h4 class="text-primary">₹{{ item.price }}</h4>
+
+    <!-- Description -->
+    <p>{{ item.description }}</p>
+
+    <!-- Availability -->
+    {% if item.status == 1 %}
+        <span class="badge bg-success">Available</span>
+
+        <!--Add to Cart -->
+        <div class="mt-3">
+            <a href="{% url 'add_to_cart' item.pk %}" class="btn btn-success">
+                Add to Cart 🛒
+            </a>
+        </div>
+
+    {% else %}
+        <span class="badge bg-danger">Not Available</span>
+    {% endif %}
+
+    <!--Back Button -->
+    <div class="mt-3">
+        <a href="{% url 'home' %}" class="btn btn-secondary">
+            ← Back to Menu
+        </a>
     </div>
+
+</div>
+
 {% endblock content %}
