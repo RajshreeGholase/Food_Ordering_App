@@ -275,7 +275,7 @@ Orders
 ## 👩‍💻 Author
 
 **Rajshree Nandkumar Gholase**  
-B.Tech AI & Data Science  
+B.Tech Artificial Intelligence and Data Science 
 
 ---
 
