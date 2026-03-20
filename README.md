@@ -33,11 +33,17 @@ Order is saved → Cart is cleared
 
 🏗️ 2. PROJECT STRUCTURE
 mysite/
+
 │
+
 ├── mysite/        → Main project settings
+
 ├── menu/          → Your app (core logic)
+
 │
+
 ├── templates/     → HTML files
+
 ├── db.sqlite3     → Database
 
 ---
@@ -262,12 +268,19 @@ Orders
 💯 9. KEY CONCEPTS YOU USED
 
 ✔ Django Models
+
 ✔ Class-Based Views
+
 ✔ Function-Based Views
+
 ✔ Authentication
+
 ✔ ORM (database queries)
+
 ✔ Templates & Jinja syntax
+
 ✔ URL routing
+
 ✔ CRUD operations
 
 ---
@@ -292,4 +305,3 @@ Gmail: gholaserajshree@gmail.com
 If you like this project, please give it a ⭐ on GitHub!
 
 
-Updated README for Pull Shark achievement
